@@ -46,13 +46,13 @@ pipeline{
             spec: '''{
                  "files": [
                              {
-                                "pattern": "target/*.war",
-                                "target": "art-doc-dev-loc/java-web/"
+                                "pattern": "target/*.jar",
+                                "target": "art-doc-dev-loc/calculator/"
                             }
                         ]
             }''',
  
-            buildName: 'sample maven',
+            buildName: 'sample calulator',
             buildNumber: '1'
             )
       }

@@ -13,11 +13,8 @@ public class AppTest
 {
 	@Test
 	public void testSum() {
-		// Given
 		App calculator = new App();
-		// When
 		int result = calculator.sum(2, 2);
-		// Then
 		if (result != 4) {   // if 2 + 2 != 4
 			Assert.fail();
 		}
