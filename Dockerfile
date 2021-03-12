@@ -8,7 +8,7 @@ RUN mvn install
 # RUN java -jar /target/*.jar
 FROM openjdk:11
 WORKDIR /maven-app
-COPY --from=maven /spring-app/target/*.jar ./app.jar 
+COPY --from=maven /maven-app/target/*.jar ./app.jar 
 Run pwd
 Run ls
 ENTRYPOINT ["java","-jar","./app.jar"]
